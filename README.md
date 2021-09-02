@@ -1,5 +1,7 @@
 # cwi-reset-3edicao-modulo03-java-poo-personagem-v3
 
+![sonictrio750](https://user-images.githubusercontent.com/81782090/131916700-3d7b56b6-e711-4495-9db3-0b862d2a3f65.jpg)
+
 Este repositório será destinado apenas às soluções dos exercícios propostos, elaboradas por mim, durante a 3ª Edição do programa Reset da empresa CWI. Estarão disponibilizados os códigos correspondentes ao Módulo 03, onde foi a Programação Orientada a Objeto, voltada para a linguagem Java.
 
 Esta é a teceira versão da atividade elaborada anteriormente, disponível no link: https://github.com/maitecr/cwi-reset-3edicao-modulo03-java-poo-personagem-v2
@@ -24,5 +26,6 @@ Quanto ao último personagem, Tails, ele recebeu o atributo de "jetshoes", que o
 
 ![tails voar](https://user-images.githubusercontent.com/81782090/131916200-cd64bfc8-2a75-48df-b323-466e2493530b.jpg)
 
-
+ 
+                                                                                        Atualizado em 02 de Setembro de 2021.
 
