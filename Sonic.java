@@ -1,26 +1,37 @@
 public class Sonic extends Personagem {
-	private int anel;
-	private String tails = "Tails";
+	private Tails tails;
+
+public Sonic(String nome, double altura, double velocidade) {
+	super(nome, altura, velocidade);
+}
 	
-	public void coletarAneis() {
-		this.anel++;
-		if (this.anel % 2 == 0) {
-			this.setVelocidade(this.velocidade * 5);
+	public void entrarTails(Tails tails) {
+		this.tails = tails;
+	}
+	
+	public void voarTails() {
+		if (this.tails != null) {
+			System.out.println("Está voando com Tails!");
+		} else {
+			System.out.println("Tails não chegou!");
 		}
 	}
-	
-	public void entrarTails() {
-		if (this.anel >= 10) {
-			System.out.println(this.tails +" veio em sua ajuda e você pode voar com ele por 1min!");
-		}
+
+
+	@Override
+	public void correr() {
+		this.velocidade = this.velocidade + (this.velocidade * 0.75f);		
 	}
 	
-	public int getAnel() {
-		return this.anel;
+	@Override
+	public void saltar() {
+		System.out.println(this.nome + " está saltando " + this.altura * 0.5);
 	}
 	
-	public void setAnel() {
-		this.anel = anel;
+	@Override
+	public void obstaculo(double obstaculo) {
+		System.out.println("Altura do obstáculo: " + obstaculo);
+		System.out.println(this.nome + " pulou uma altura de " + obstaculo * 1.5);
 	}
 	
 }
