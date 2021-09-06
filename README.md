@@ -29,3 +29,10 @@ Quanto ao último personagem, Tails, ele recebeu o atributo de "jetshoes", que o
  
                                                                                         Atualizado em 02 de Setembro de 2021.
 
+Nesta fase final, desenvolve-se classes e métodos abstratos, a fim de ser trabalhado a sobreposição, e a construção dos objetos a partir da classe abstrata progenitora.
+Então, testou-se os métodos abstratos e sobrepostos: correr(), saltar() e obstaculo(), como é demonstrado nos exemplos abaixo.
+
+![sonictailsvoar](https://user-images.githubusercontent.com/81782090/132230167-41a83dfd-fe2c-490f-85a4-f5beedefc1cb.jpg)
+
+![testepers](https://user-images.githubusercontent.com/81782090/132230197-4112cbe9-8289-4f18-a911-8803a9d8e8f8.jpg)
+
