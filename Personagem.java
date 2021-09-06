@@ -1,17 +1,25 @@
+
 public abstract class Personagem {
 	protected String nome;
+	protected double altura;
 	private int estamina;
 	private int qtdMoedas;
 	private int qtdVidas;
-	protected int velocidade;
+	protected double velocidade;
 
 	//Método Construtor
-	public Personagem() {
+	public Personagem(String nome, double altura, double velocidade) {
+		this.nome = nome;
+		this.altura = altura;
+		this.velocidade = velocidade;
 		this.estamina = 100;
 		this.qtdMoedas = 0;
 		this.qtdVidas = 1;
-		this.velocidade = 10;
 	}
+	
+	public abstract void correr();
+	public abstract void saltar();
+	public abstract void obstaculo(double obstaculo);
 	
 	//Métodos getters
 	private String getNome() {
@@ -22,8 +30,12 @@ public abstract class Personagem {
 		return this.estamina;
 	}
 	
-	public int getVelocidade() {
+	public double getVelocidade() {
 		return this.velocidade;
+	}
+	
+	public double getAltura() {
+		return this.altura;
 	}
 	
 	
@@ -37,8 +49,12 @@ public abstract class Personagem {
 		this.estamina = estamina;
 	}
 	
-	public void setVelocidade(int vel)  {
+	public void setVelocidade(double vel)  {
 		this.velocidade = vel;
+	}
+	
+	public void getAltura(double altura) {
+		this.altura = altura;
 	}
 		
 
@@ -46,6 +62,7 @@ public abstract class Personagem {
 	public void status() {
 		System.out.println("-----------------------");
 		System.out.println("Nome: " + this.getNome());
+		System.out.println("Altura: " + this.getAltura() );
 		System.out.println("Estamina: " + this.getEstamina());
 		System.out.println("Vida: " + this.qtdVidas);
 		System.out.println("Moedas: " + this.qtdMoedas);
@@ -87,5 +104,6 @@ public abstract class Personagem {
 			this.revigorar();
 		}
 	}
+
 
 }
